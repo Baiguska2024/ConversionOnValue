@@ -58,15 +58,15 @@ namespace ConversionOnValue.Forms
             }
             else if (cmb5.Text == "Kilograms" && cmb6.Text == "Pounds")
             {
-                weight = 2.20462 * (double)pounds ;
+                 weight =   (double)pounds/2.20462;
 
 
                 label5.Text = weight.ToString() + " lbs";
             }
             else if (cmb5.Text == "Pounds" && cmb6.Text == "Kilograms")
             {
-                
-                weight =   (double)pounds/2.20462;
+                 weight = 2.20462 * (double)pounds ;
+             
 
                 label5.Text = weight.ToString() + " kg";
             }
